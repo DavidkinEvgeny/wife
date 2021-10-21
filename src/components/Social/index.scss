@@ -1,0 +1,16 @@
+.Social {
+  width: 200px;
+  > ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    > li {
+      list-style: none;
+      > a {
+        > svg {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

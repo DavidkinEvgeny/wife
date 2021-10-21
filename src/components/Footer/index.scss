@@ -1,0 +1,9 @@
+.Footer {
+  background: #000;
+  min-height: 100px;
+  padding: 40px 0;
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+.About {
+  // height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  &__text {
+    > h1 {
+      margin-bottom: 20px;
+    }
+    > p {
+      text-align: left;
+      text-indent: 24px;
+    }
+  }
+  > img {
+    border-radius: 16px;
+    width: 100%;
+  }
+}
