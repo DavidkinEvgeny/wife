@@ -1,32 +1,34 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import MainWrapper from '../../components/MainWrapper'
-import { HiArrowNarrowRight } from 'react-icons/hi'
-import './insex.scss'
-
+import WorkMenu from '../../components/WorkMenu'
+import './index.scss'
+import {sergey} from './../../state/index'
+import {valera} from './../../state/index'
 
 export default function Works() {
-  const [classWorkMenu, setClassWorkMenu] = useState(['WorkMenu', 'WorkMenu__active'])
-  function activateWorkMenu() {
-    (classWorkMenu.includes('WorkMenu__deactive')) 
-      ? setClassWorkMenu(['WorkMenu', 'WorkMenu__active']) 
-      : setClassWorkMenu(['WorkMenu', 'WorkMenu__deactive'])
-  }
   return (
     <MainWrapper>
       <div className='Works'>
-        <div className={classWorkMenu.join(' ')}>
-          <p onClick={() => activateWorkMenu()}><HiArrowNarrowRight /></p>
-          <ul>
-            <li><Link to='/works'>Все работы</Link></li>
-            <li><Link to='/works'>Осень</Link></li>
-            <li><Link to='/works'>Лето</Link></li>
-            <li><Link to='/works'>Зима</Link></li>
-            <li><Link to='/works'>Весна</Link></li>
-          </ul>
-        </div>
+        <WorkMenu /> 
         <div className="WorkContent">
-
+          {sergey.map(i => {
+            return (
+              <React.Fragment key={i.id}>
+                {i.position === 'vertical'
+                  ? <div className="WorkContent__container vertical" key={i.id}><img src={i.src} alt={i.alt} /></div>
+                  : <div className="WorkContent__container horizontal" key={i.id}><img src={i.src} alt={i.alt} /></div>}
+              </React.Fragment>
+            )
+          })}
+          {valera.map(i => {
+            return (
+              <React.Fragment key={i.id}>
+              {i.position === 'vertical'
+                ? <div className="WorkContent__container vertical" key={i.id}><img src={i.src} alt={i.alt} /></div>
+                : <div className="WorkContent__container horizontal" key={i.id}><img src={i.src} alt={i.alt} /></div>}
+            </React.Fragment>
+            )
+          })}
         </div>
       </div>
     </MainWrapper>
