@@ -1,11 +1,19 @@
-import Img0 from './../img/DSC_0225р.jpg'
-import Img1 from './../img/DSC_0226р.jpg'
-import Img2 from './../img/DSC_0243р.jpg'
-import Img3 from './../img/DSC_0249р.jpg'
-import Img4 from './../img/DSC_0250р.jpg'
-import Img5 from './../img/DSC_0275р.jpg'
-import Img6 from './../img/DSC_0279р.jpg'
-import Img7 from './../img/DSC_0284р.jpg'
+import Img0 from './../img/DSC_0225р-max.webp'
+import Img0min from './../img/DSC_0225р-min.webp'
+import Img1 from './../img/DSC_0226р-max.webp'
+import Img1min from './../img/DSC_0226р-min.webp'
+import Img2 from './../img/DSC_0243р-max.webp'
+import Img2min from './../img/DSC_0243р-min.webp'
+import Img3 from './../img/DSC_0249р-max.webp'
+import Img3min from './../img/DSC_0249р-min.webp'
+import Img4 from './../img/DSC_0250р-max.webp'
+import Img4min from './../img/DSC_0250р-min.webp'
+import Img5 from './../img/DSC_0275р-max.webp'
+import Img5min from './../img/DSC_0275р-min.webp'
+import Img6 from './../img/DSC_0279р-max.webp'
+import Img6min from './../img/DSC_0279р-min.webp'
+import Img7 from './../img/DSC_0284р-max.webp'
+import Img7min from './../img/DSC_0284р-min.webp'
 import Img8 from './../img/DSC_0717р.jpg'
 import Img9 from './../img/DSC_0725р.jpg'
 import Img10 from './../img/DSC_0734р.jpg'
@@ -26,14 +34,14 @@ import Img24 from './../img/DSC_0961р.jpg'
 import Img25 from './../img/DSC_0963р.jpg'
 
 export const sergey = [
-  {id: 0, src: Img0, alt: 'Сергей', position: 'vertical'},
-  {id: 1, src: Img1, alt: 'Сергей', position: 'vertical'},
-  {id: 2, src: Img2, alt: 'Сергей', position: 'horisontal'},
-  {id: 3, src: Img3, alt: 'Сергей', position: 'vertical'},
-  {id: 4, src: Img4, alt: 'Сергей', position: 'vertical'},
-  {id: 5, src: Img5, alt: 'Сергей', position: 'horisontal'},
-  {id: 6, src: Img6, alt: 'Сергей', position: 'vertical'},
-  {id: 7, src: Img7, alt: 'Сергей', position: 'horisontal'},
+  {id: 0, src: Img0, srcMin: Img0min, alt: 'Сергей', position: 'vertical'},
+  {id: 1, src: Img1, srcMin: Img1min, alt: 'Сергей', position: 'vertical'},
+  {id: 2, src: Img2, srcMin: Img2min, alt: 'Сергей', position: 'horisontal'},
+  {id: 3, src: Img3, srcMin: Img3min, alt: 'Сергей', position: 'vertical'},
+  {id: 4, src: Img4, srcMin: Img4min, alt: 'Сергей', position: 'vertical'},
+  {id: 5, src: Img5, srcMin: Img5min, alt: 'Сергей', position: 'horisontal'},
+  {id: 6, src: Img6, srcMin: Img6min, alt: 'Сергей', position: 'vertical'},
+  {id: 7, src: Img7, srcMin: Img7min, alt: 'Сергей', position: 'horisontal'},
 
 ]
 export const valera = [

@@ -15,12 +15,12 @@ export default function Works() {
             return (
               <React.Fragment key={i.id}>
                 {i.position === 'vertical'
-                  ? <div className="WorkContent__container vertical" key={i.id}><img src={i.src} alt={i.alt} /></div>
-                  : <div className="WorkContent__container horizontal" key={i.id}><img src={i.src} alt={i.alt} /></div>}
+                  ? <div className="WorkContent__container vertical" key={i.id}><img src={i.srcMin} alt={i.alt} /></div>
+                  : <div className="WorkContent__container horizontal" key={i.id}><img src={i.srcMin} alt={i.alt} /></div>}
               </React.Fragment>
             )
           })}
-          {valera.map(i => {
+          {/* {valera.map(i => {
             return (
               <React.Fragment key={i.id}>
               {i.position === 'vertical'
@@ -28,7 +28,7 @@ export default function Works() {
                 : <div className="WorkContent__container horizontal" key={i.id}><img src={i.src} alt={i.alt} /></div>}
             </React.Fragment>
             )
-          })}
+          })} */}
         </div>
       </div>
     </MainWrapper>
